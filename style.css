@@ -100,8 +100,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Improve media defaults */
-
 picture,
 svg,
 img {
@@ -113,8 +111,6 @@ img {
 textarea {
   resize: none;
 }
-
-/* ----- Typography -----*/
 
 input,
 textarea,
@@ -186,10 +182,6 @@ h3,
   }
 }
 
-/* ----- Utilities -----*/
-
-/* Center and constrain the width of page sections */
-
 .container {
   max-inline-size: var(--site-max-width);
   margin-inline: auto;
@@ -219,13 +211,9 @@ h3,
   }
 }
 
-/* disable scroll when menu is opened */
-
 .lock-screen {
   overflow-y: hidden;
 }
-
-/* hides visually and removes from accessibility tree  */
 
 .hidden {
   visibility: hidden;
@@ -241,8 +229,6 @@ h3,
   transition: 0.1s;
   color: lightgrey;
 }
-
-/* ----- Components -----*/
 
 .btn {
   font-size: 1.35rem;
@@ -343,8 +329,6 @@ body.light .link::after {
   transform: scaleX(1);
 }
 
-/* ----- Layout -----*/
-
 section:not(:first-child) {
   padding-block-start: var(--gutter-huge);
 }
@@ -374,8 +358,6 @@ main {
   }
 }
 
-/* ----- Menu Button -----*/
-
 .menu-btn-container {
   position: fixed;
   width: 100%;
@@ -402,8 +384,6 @@ main {
   font-stretch: 110%;
   font-weight: 620;
 }
-
-/* ----- Navigation -----*/
 
 .nav {
   min-block-size: 100vh;
@@ -450,8 +430,6 @@ main {
 .nav-item a:focus::after {
   transform: scale(1);
 }
-
-/* ----- Header -----*/
 
 .header {
   min-block-size: calc(100vh + var(--radius));
@@ -520,8 +498,6 @@ body.light .header {
   }
 }
 
-/* ----- Skills -----*/
-
 .logos {
   display: flex;
   justify-content: space-around;
@@ -546,7 +522,7 @@ body.light .header {
 .logo {
   position: absolute;
   top: 0;
-  max-block-size: 85px;
+  max-block-size: 8.5vh;
   max-inline-size: 150px;
   transition: all 2.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -586,8 +562,6 @@ body.dark .logo {
 body.light .logo {
   filter: grayscale(0%) opacity(1);
 }
-
-/* ----- Work -----*/
 
 .work-boxes {
   padding-block-start: var(--gutter-x-large);
@@ -680,8 +654,6 @@ body.dark .work-links img {
   filter: invert(1);
 }
 
-/* Github icon */
-
 .work-links>a:last-child {
   transition: 0.3s transform ease-in;
 }
@@ -729,8 +701,6 @@ body.dark .work-links img {
     opacity: 1;
   }
 }
-
-/* ----- Experiences -----*/
 
 .experience-boxes {
   display: flex;
@@ -797,8 +767,6 @@ body.dark .work-links img {
   }
 }
 
-/* ----- Featured experience -----*/
-
 .featured-experience {
   flex-basis: 100%;
   display: flex;
@@ -825,8 +793,6 @@ body.dark .work-links img {
 .featured-experience .experience-text {
   font-size: var(--text-medium);
 }
-
-/* ----- Contact -----*/
 
 .contact-content {
   display: grid;
@@ -947,8 +913,6 @@ body.light .signatures {
   margin-inline-start: var(--gutter-nano);
 }
 
-/* Footer */
-
 .footer {
   border-top: 1px solid var(--border);
   padding-block: var(--gutter-x-large);
@@ -1010,7 +974,6 @@ body.dark .footer-link img {
 }
 
 .theme-switch {
-  /* Track */
 
   --track-size: calc(var(--thumb-size) * 2);
   --track-padding: 0.225rem;
@@ -1020,7 +983,6 @@ body.dark .footer-link img {
   --track-color-inactive: var(--track-inactive);
   --track-color-active: var(--track-active);
 
-  /* Thumb */
 
   --thumb-position: 0%;
   --thumb-size: 1.2rem;
@@ -1077,8 +1039,6 @@ input:checked {
   --thumb-position: 100%;
   background-color: var(--track-active);
 }
-
-/* ----- Image Collection -----*/
 
 *,
 *:before,
